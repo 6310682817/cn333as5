@@ -22,7 +22,7 @@ Android app about Phone Book
    
     > Can press into each list to edit.
 
-Link demo : <code>[https://youtu.be/AMuGCgCPVYY](https://youtu.be/AMuGCgCPVYY)</code>
+Link demo : <code>[https://youtu.be/xzT_Q-XakSc](https://youtu.be/xzT_Q-XakSc)</code>
 <hr>
 
 Member
