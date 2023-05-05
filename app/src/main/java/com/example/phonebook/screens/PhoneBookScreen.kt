@@ -21,7 +21,8 @@ import kotlinx.coroutines.launch
 @ExperimentalMaterialApi
 @Composable
 fun PhoneBookScreen(viewModel: MainViewModel) {
-    val phones by viewModel.phonesNotInTrash.observeAsState(listOf())
+    val phone by viewModel.phonesNotInTrash.observeAsState(listOf())
+    val phones = phone.sortedBy { it.name }
     val scaffoldState: ScaffoldState = rememberScaffoldState()
     val coroutineScope = rememberCoroutineScope()
 
@@ -102,18 +103,3 @@ private fun PhonesList(
         }
     }
 }
-
-//@ExperimentalMaterialApi
-//@Preview
-//@Composable
-//private fun NotesListPreview() {
-//    NotesList(
-//        notes = listOf(
-//            NoteModel(1, "Note 1", "Content 1", null),
-//            NoteModel(2, "Note 2", "Content 2", false),
-//            NoteModel(3, "Note 3", "Content 3", true)
-//        ),
-//        onNoteCheckedChange = {},
-//        onNoteClick = {}
-//    )
-//}
